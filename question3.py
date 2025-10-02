@@ -7,17 +7,19 @@ human_age = int(input("enter your pet's age in human years:"))
 #conversion
 if pet_type == 'dog:' or pet_type == 'cat':
   if human_age <=2:
-  pet_age = human_age * 12 # 2 years = 24
-else:
-  pet_age = 24 + (human_age - 2) * 4
+     pet_age = human_age * 12  
+  else:
+   pet_age = 24 + (human_age - 2) * 4
 elif pet_type == "bird":
-pet_age = human_age * 9
-elif pet_type =="hamster":
-pet_age = human_age * 25
+  pet_age = human_age * 9
+elif pet_type == "hamster":
+    pet_age = human_age * 25
+  
 else:
-print("sorry, unsupported pet type.")
+   print("sorry, unsupported pet type.")
+   pet_age = 0
 
-#print result 
+#print result
 print("\n===Pet Age Conversion ===")
 print(f"pet Type: {pet_type.capitalize}")
 print(f"human age:{human_age} years")
