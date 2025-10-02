@@ -16,15 +16,15 @@ for num, (food,price) in menu.items():
 
 #user choice
 choice = int(input("Enter your choice (1-4)"))
-food, price = menu{choice}
+food, price = menu [choice]
 
 #drink option
 drink_choice = input("would you like a drink? (+$2.50) (yes/no):")
-drink_price = 2.50 if drink_choice =="yes" else: 0.00
+drink_price = 2.50 if drink_choice =="yes" else 0.00
 
 #total & tax
 subtotal = price + drink_price
-tax = subtotal * 8%
+tax = subtotal * 0.08
 total = subtotal + tax
 
 #bill
